@@ -1,0 +1,31 @@
+[project]
+name = "mcp-currency-converter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Pelumi Adejuwon", email = "140279753+PELUMIADEJUWON@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "crewai>=1.15.28",
+    "crewai-tools>=1.15.28",
+    "fastmcp>=3.4.8",
+    "gradio>=6.30.0",
+    "litellm>=1.105.1",
+    "mcp>=1.28.1",
+    "mcpadapt>=0.1.20",
+    "openai>=2.54.0",
+    "openai-agents>=0.20.0",
+    "pydantic-settings>=2.16.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+mcp-currency-converter = "mcp_currency_converter:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
